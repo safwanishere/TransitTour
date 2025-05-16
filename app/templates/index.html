@@ -7,11 +7,12 @@
   <h2>Plan a Layover Trip</h2>
   <form action="/plan" method="get">
     <label>Choose Airport:</label>
-    <select name="airport" required>
-      <option value="JFK">JFK - New York</option>
-      <option value="LHR">LHR - London</option>
-      <option value="DXB">DXB - Dubai</option>
-    </select><br><br>
+    <select name="airport" id="airport" class="form-control">
+        {% for airport in airports %}
+          <option value="{{ airport.iata }}">{{ airport.name }} ({{ airport.iata }})</option>
+        {% endfor %}
+    </select>
+    <br><br>
 
     <label>Transit Time (in minutes):</label>
     <input type="number" name="time" required min="30"><br><br>

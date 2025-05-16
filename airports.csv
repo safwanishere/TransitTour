@@ -1,4 +1,74 @@
 IATA,Name,Latitude,Longitude
-JFK,John F Kennedy International Airport,40.6413,-73.7781
-LHR,London Heathrow Airport,51.4700,-0.4543
+ATL,Hartsfield–Jackson Atlanta International Airport,33.6407,-84.4277
+PEK,Beijing Capital International Airport,40.0801,116.5846
+LAX,Los Angeles International Airport,33.9416,-118.4085
 DXB,Dubai International Airport,25.2532,55.3657
+HND,Tokyo Haneda Airport,35.5494,139.7798
+ORD,O'Hare International Airport,41.9742,-87.9073
+LHR,London Heathrow Airport,51.4700,-0.4543
+HKG,Hong Kong International Airport,22.3080,113.9185
+PVG,Shanghai Pudong International Airport,31.1434,121.8052
+CDG,Charles de Gaulle Airport,49.0097,2.5479
+AMS,Amsterdam Schiphol Airport,52.3105,4.7683
+DEL,Indira Gandhi International Airport,28.5562,77.1000
+FRA,Frankfurt am Main Airport,50.0379,8.5622
+SIN,Singapore Changi Airport,1.3644,103.9915
+ICN,Incheon International Airport,37.4602,126.4407
+DEN,Denver International Airport,39.8561,-104.6737
+JFK,John F. Kennedy International Airport,40.6413,-73.7781
+KUL,Kuala Lumpur International Airport,2.7456,101.7072
+MAD,Adolfo Suárez Madrid–Barajas Airport,40.4983,-3.5676
+BKK,Suvarnabhumi Airport,13.6900,100.7501
+SYD,Sydney Kingsford Smith Airport,-33.9399,151.1753
+YYZ,Toronto Pearson International Airport,43.6777,-79.6248
+GRU,São Paulo/Guarulhos International Airport,-23.4356,-46.4731
+SFO,San Francisco International Airport,37.6213,-122.3790
+MIA,Miami International Airport,25.7959,-80.2870
+BCN,Barcelona–El Prat Airport,41.2974,2.0833
+MEX,Mexico City International Airport,19.4361,-99.0719
+SEA,Seattle–Tacoma International Airport,47.4502,-122.3088
+EZE,Ministro Pistarini International Airport,-34.8222,-58.5358
+DOH,Hamad International Airport,25.2736,51.6080
+JNB,OR Tambo International Airport,-26.1367,28.2410
+MAN,Manchester Airport,53.3659,-2.2729
+ZRH,Zurich Airport,47.4647,8.5492
+BOM,Chhatrapati Shivaji Maharaj International Airport,19.0896,72.8656
+SVO,Sheremetyevo International Airport,55.9726,37.4146
+CPT,Cape Town International Airport,-33.9715,18.6021
+GIG,Rio de Janeiro/Galeão International Airport,-22.8090,-43.2506
+CAI,Cairo International Airport,30.1219,31.4056
+VIE,Vienna International Airport,48.1103,16.5697
+LIS,Humberto Delgado Airport (Lisbon Airport),38.7742,-9.134
+BLR,Kempegowda International Airport (Karnataka),13.1986,77.7066
+MAA,Chennai International Airport (Tamil Nadu),12.9941,80.1709
+HYD,Rajiv Gandhi International Airport (Telangana),17.2403,78.4294
+CCU,Netaji Subhas Chandra Bose International Airport (West Bengal),22.6547,88.4467
+GOI,Goa International Airport (Goa),15.3800,73.8312
+AMD,Sardar Vallabhbhai Patel International Airport (Gujarat),23.0732,72.6270
+PNQ,Pune Airport (Maharashtra - secondary),18.5822,73.9197
+LKO,Chaudhary Charan Singh International Airport (Uttar Pradesh),26.7606,80.8893
+JAI,Jaipur International Airport (Rajasthan),26.8242,75.8122
+BBI,Biju Patnaik International Airport (Odisha),20.2444,85.8178
+BHO,Raja Bhoj Airport (Madhya Pradesh),23.2875,77.3374
+IXC,Chandigarh Airport (Punjab/Haryana/Chandigarh UT),30.6735,76.7885
+PAT,Jay Prakash Narayan Airport (Bihar),25.5913,85.0870
+GAU,Lokpriya Gopinath Bordoloi International Airport (Assam),26.1061,91.5859
+IXZ,Veer Savarkar International Airport (Andaman & Nicobar Islands),11.6410,92.7297
+IMF,Bir Tikendrajit International Airport (Manipur),24.7600,93.8967
+SHL,Shillong Airport (Meghalaya),25.7036,91.9787
+DMU,Dimapur Airport (Nagaland),25.8839,93.7711
+IXS,Silchar Airport (Assam - secondary),24.9129,92.9787
+AJL,Lengpui Airport (Mizoram),23.8390,92.6195
+IXA,Maharaja Bir Bikram Airport (Tripura),23.8860,91.2404
+TIR,Tirupati Airport (Andhra Pradesh),13.6325,79.5433
+VGA,Gannavaram Airport (Andhra Pradesh - Vijayawada),16.5304,80.7968
+IXR,Birsa Munda Airport (Jharkhand),23.3143,85.3216
+DIB,Dibrugarh Airport (Assam - tertiary),27.4839,95.0169
+RAJ,Rajkot Airport (Gujarat - secondary),22.3092,70.7795
+JLR,Jabalpur Airport (Madhya Pradesh - secondary),23.1778,80.0520
+TCR,Thoothukudi Airport (Tamil Nadu - secondary),8.7241,78.0248
+TRV,Trivandrum International Airport (Kerala),8.4821,76.9201
+COK,Cochin International Airport (Kerala - secondary),10.1520,76.4019
+IXJ,Jammu Airport (Jammu & Kashmir),32.6891,74.8375
+SXR,Srinagar International Airport (Jammu & Kashmir),33.9871,74.7743
+IXB,Bagdogra Airport (West Bengal - secondary),26.6812,88.3286
