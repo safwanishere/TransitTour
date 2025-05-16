@@ -1,1 +1,22 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TransitTour</title>
+</head>
+<body>
+  <h2>Plan a Layover Trip</h2>
+  <form action="/plan" method="get">
+    <label>Choose Airport:</label>
+    <select name="airport" required>
+      <option value="JFK">JFK - New York</option>
+      <option value="LHR">LHR - London</option>
+      <option value="DXB">DXB - Dubai</option>
+    </select><br><br>
+
+    <label>Transit Time (in minutes):</label>
+    <input type="number" name="time" required min="30"><br><br>
+
+    <button type="submit">Plan Trip</button>
+  </form>
+</body>
+</html>
