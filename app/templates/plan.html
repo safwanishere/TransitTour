@@ -5,28 +5,75 @@
     <title>Nearby Places</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css"/>
+
+    <style>
+        #map {
+            height: 600px;
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <h2>Nearby Places You Can Visit</h2>
-
         <div id="map"></div>
     </div>
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script>
-        var map = L.map('map').setView([{{ lat }}, {{ lon }}], 13);
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
 
+    <script>
+        // Server-passed data
+        const airportLat = {{ lat | float }};
+        const airportLon = {{ lon | float }};
+        const places = {{ places | tojson | safe }};
+
+        const map = L.map('map').setView([airportLat, airportLon], 13);
+
+        // Add OpenStreetMap tiles
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
         }).addTo(map);
 
-        {% for place in places %}
-            L.marker([{{ place.point.lat }}, {{ place.point.lon }}]).addTo(map)
-                .bindPopup(`<h3>{{ place.name | default('Unknown') }}</h3>
-                            <p>Type: {{ place.kinds.replace('_', ' ') }}</p>`);
-        {% endfor %}
+        // Airport marker
+        const airportIcon = L.icon({
+            iconUrl: '../static/images/airport-marker-icon.png',
+            iconSize: [40, 40]
+        });
+        const airportMarker = L.marker([airportLat, airportLon], {icon: airportIcon}).addTo(map).bindPopup("Airport");
+
+        // Routing control (initially blank)
+        const control = L.Routing.control({
+            waypoints: [],
+            routeWhileDragging: false,
+            addWaypoints: false,
+            show: false
+        }).addTo(map);
+
+        // Add markers for each place
+        places.forEach(place => {
+            if (!place.name) return;
+
+            const placeLat = place.point.lat;
+            const placeLon = place.point.lon;
+
+            const marker = L.marker([placeLat, placeLon]).addTo(map)
+                .bindPopup(`
+                    <h3>${place.name}</h3>
+                    <p>Type: ${place.kinds.replace(/_/g, ' ')}</p>
+                    <p>Distance: ${(place.dist / 1000).toFixed(2)} kms</p>
+                `);
+
+            marker.on('click', () => {
+                control.setWaypoints([
+                    L.latLng(airportLat, airportLon),
+                    L.latLng(placeLat, placeLon)
+                ]);
+            });
+        });
     </script>
 </body>
 </html>

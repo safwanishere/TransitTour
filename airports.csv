@@ -42,18 +42,18 @@ LIS,Humberto Delgado Airport (Lisbon Airport),38.7742,-9.134
 BLR,Kempegowda International Airport (Karnataka),13.1986,77.7066
 MAA,Chennai International Airport (Tamil Nadu),12.9941,80.1709
 HYD,Rajiv Gandhi International Airport (Telangana),17.2403,78.4294
-CCU,Netaji Subhas Chandra Bose International Airport (West Bengal),22.6547,88.4467
+CCU,Netaji Subhas Chandra Bose International Airport,22.6547,88.4467
 GOI,Goa International Airport (Goa),15.3800,73.8312
 AMD,Sardar Vallabhbhai Patel International Airport (Gujarat),23.0732,72.6270
 PNQ,Pune Airport (Maharashtra - secondary),18.5822,73.9197
-LKO,Chaudhary Charan Singh International Airport (Uttar Pradesh),26.7606,80.8893
+LKO,Chaudhary Charan Singh International Airport,26.7606,80.8893
 JAI,Jaipur International Airport (Rajasthan),26.8242,75.8122
 BBI,Biju Patnaik International Airport (Odisha),20.2444,85.8178
 BHO,Raja Bhoj Airport (Madhya Pradesh),23.2875,77.3374
 IXC,Chandigarh Airport (Punjab/Haryana/Chandigarh UT),30.6735,76.7885
 PAT,Jay Prakash Narayan Airport (Bihar),25.5913,85.0870
 GAU,Lokpriya Gopinath Bordoloi International Airport (Assam),26.1061,91.5859
-IXZ,Veer Savarkar International Airport (Andaman & Nicobar Islands),11.6410,92.7297
+IXZ,Veer Savarkar International Airport,11.6410,92.7297
 IMF,Bir Tikendrajit International Airport (Manipur),24.7600,93.8967
 SHL,Shillong Airport (Meghalaya),25.7036,91.9787
 DMU,Dimapur Airport (Nagaland),25.8839,93.7711
@@ -72,3 +72,4 @@ COK,Cochin International Airport (Kerala - secondary),10.1520,76.4019
 IXJ,Jammu Airport (Jammu & Kashmir),32.6891,74.8375
 SXR,Srinagar International Airport (Jammu & Kashmir),33.9871,74.7743
 IXB,Bagdogra Airport (West Bengal - secondary),26.6812,88.3286
+BAH,Bahrain International Airport,26.2672, 50.6303
