@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.page-container{
+    width: 100vw - 10vw;
+    margin: 3rem 5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.map-container{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+#map {
+    height: 600px;
+    width: 100%;
+    border: 2px solid #333;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#map p{
+    color: black;
+}
+
+ul{
+    padding-left: 20px;
+}
+
+.links-container{
+    width: 40vw;
+    margin-left: 5vw;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    opacity: 0.8;
+}
