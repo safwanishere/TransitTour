@@ -17,29 +17,6 @@
 
   <h1>Transit Tour</h1>
   <h4>We help you make the most out of your transit time, plan a layover trip from your airport while you wait for your connecting flight. Choose your transit airport and the waiting time and we'll fetch the closest places you can visit during your wait!</h4>
-  
-  <div class="divider"></div>
-
-  <form action="/plan" method="get">
-    <div class="container">
-      <select name="airport" id="airport" class="form-control" required>
-        <option value="" selected disabled>
-          ⚲    Choose your airport
-        </option>
-        {% for airport in airports %}
-          <option value="{{ airport.iata }}">{{ airport.name }} ({{ airport.iata }})</option>
-        {% endfor %}
-      </select>
-
-      <input type="number" id="hours" name="hours" max="48" placeholder="hours" required>
-      <input type="number" id="minutes" name="minutes" max="59" placeholder="minutes" required>      
-      
-    </div>
-
-    <div class="divider"></div>
-
-    <button type="submit" style="display: block; margin: 0 auto;">Plan Trip</button>
-  </form>
 
   <footer>
     <p>© Copyright 2025. All Rights Reserved</p>

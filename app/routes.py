@@ -24,3 +24,7 @@ def plan():
     lat, lon = coords
     places = get_nearby_places(lat, lon, time)
     return render_template("plan.html", lat=lat, lon=lon, places=places, code=code)
+
+@routes.route('/about')
+def about():
+    return render_template("about.html")
