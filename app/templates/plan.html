@@ -37,6 +37,52 @@
                 </ul>
             </div>
         </div>
+        <table>
+            <thead>
+                <th>Sno</th>
+                <th>Name</th>
+                <th>Distance</th>
+                <th>Type</th>
+            </thead>
+            {% for place in places %}
+            {% if place.name %}
+                {% if loop.index < 10 %}
+                    <tr>
+                        <td>{{ loop.index }}</td>
+                        <td>{{ place.name }}
+                            <a href="https://www.google.com/search?q={{ place.name }}%20near%20{{ code }}%20airport" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" viewBox="0 0 24 24"><g fill="currentColor"><path d="M15.64 7.025h-3.622v-2h7v7h-2v-3.55l-4.914 4.914l-1.414-1.414z"/><path d="M10.982 6.975h-6v12h12v-6h-2v4h-8v-8h4z"/></g></svg>
+                            </a>
+                        </td>
+                        <td><span class="status close">{{ '%.2f kms' % ((place.dist | int) / 1000) }}</span></td>
+                        <td>{{ place.kinds[0:30] ~ "..." }}</td>
+                    </tr>
+                {% elif loop.index < 20 %}
+                    <tr>
+                        <td>{{ loop.index }}</td>
+                        <td>{{ place.name }}
+                            <a href="https://www.google.com/search?q={{ place.name }}%20near%20{{ code }}%20airport" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" viewBox="0 0 24 24"><g fill="currentColor"><path d="M15.64 7.025h-3.622v-2h7v7h-2v-3.55l-4.914 4.914l-1.414-1.414z"/><path d="M10.982 6.975h-6v12h12v-6h-2v4h-8v-8h4z"/></g></svg>
+                            </a>
+                        </td>
+                        <td><span class="status medium">{{ '%.2f kms' % ((place.dist | int) / 1000) }}</span></td>
+                        <td>{{ place.kinds[0:30] ~ "..." }}</td>
+                    </tr>
+                {% else %}
+                    <tr>
+                        <td>{{ loop.index }}</td>
+                        <td>{{ place.name }}
+                            <a href="https://www.google.com/search?q={{ place.name }}%20near%20{{ code }}%20airport" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" viewBox="0 0 24 24"><g fill="currentColor"><path d="M15.64 7.025h-3.622v-2h7v7h-2v-3.55l-4.914 4.914l-1.414-1.414z"/><path d="M10.982 6.975h-6v12h12v-6h-2v4h-8v-8h4z"/></g></svg>
+                            </a>
+                        </td>
+                        <td><span class="status far">{{ '%.2f kms' % ((place.dist | int) / 1000) }}</span></td>
+                        <td>{{ place.kinds[0:30] ~ "..." }}</td>
+                    </tr>
+                {% endif %}
+            {% endif %}
+            {% endfor %}
+        </table>
     </div>
 
     <footer>
