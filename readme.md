@@ -15,7 +15,7 @@ go to this [link](https://dev.opentripmap.org/account/settings) and sign in with
 run the following command on the terminal
 
 ```
-pip install flask flask-session requests python-dotenv
+pip install -r requirements.txt
 ```
 
 ## 3. run the main file
